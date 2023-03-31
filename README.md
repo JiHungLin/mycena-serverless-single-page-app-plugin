@@ -1,4 +1,4 @@
-# serverless-single-page-app-plugin
+# mycena-serverless-single-page-app-plugin
 
 A plugin for [Serverless Framework](https://serverless.com), to simplify deploying Single Page Application using S3 and CloudFront.
 
@@ -12,7 +12,7 @@ Based on the [official example](https://github.com/serverless/examples/tree/mast
 Install the package via NPM:
 
 ```bash
-npm install --save-dev https://github.com/jonathanconway/serverless-single-page-app-plugin/tarball
+npm install --save-dev mycena-serverless-single-page-app-plugin
 ```
 
 Then register it in your `serverless.yml` file, as a plugin:
@@ -26,6 +26,7 @@ And set an `s3LocalPath` custom variable:
 
 ```
 custom:
+  s3Bucket: web-${opt:stage}
   s3LocalPath: dist/
 ```
 
